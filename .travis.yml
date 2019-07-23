@@ -13,7 +13,7 @@ jobs:
       language: java
       jdk: openjdk11
       install: skip
-      before script:
+      before_script:
         - chmod +x gradlew
       script: ./gradlew clean build
       before_deploy:
