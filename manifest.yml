@@ -1,6 +1,6 @@
 applications:
   - name: ksivanan
-    path: ksivanan-delightful-elephant.apps.evans.pal.pivotal.io
+    path: build/libs/pal-tracker.jar
     routes:
       - route: pal-tracker-pietro-sampsonite.apps.chicken.pal.pivotal.io
     env:
