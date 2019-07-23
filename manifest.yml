@@ -1,7 +1,10 @@
 applications:
-- name: ksivanan
-  path: build/libs/pal-tracker.jar
-  random-route: true
-  env:
-    WELCOME_MESSAGE: Hello from Cloud Foundry
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+  - name: ksivanan
+    path: ksivanan-delightful-elephant.apps.evans.pal.pivotal.io
+    routes:
+      - route: pal-tracker-pietro-sampsonite.apps.chicken.pal.pivotal.io
+    env:
+      WELCOME_MESSAGE: Hello from the review environment
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+
+
