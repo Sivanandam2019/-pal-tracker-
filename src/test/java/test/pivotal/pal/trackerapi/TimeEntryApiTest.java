@@ -39,7 +39,7 @@ public class TimeEntryApiTest {
     @Before
     public void setUp() throws Exception {
         MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setUrl(System.getenv("SPRING_DATASOURCE_URL"));
+        dataSource.setUrl("jdbc:mysql://localhost:3306/tracker_test?user=tracker&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false");
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
         jdbcTemplate.execute("TRUNCATE time_entries");
